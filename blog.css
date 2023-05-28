@@ -6,4 +6,108 @@
 
 body{
     font-family: 'Bitter', 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+#brand_name{
+    width: 40%;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+a{
+    color: black;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: whitesmoke;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    width: 100vw;
+    padding: 0 0 0 3rem;
+    box-shadow: 0 1px 15px rgba(0,0,0,0.12), 0 1px 2px whitesmoke;
+    height: 4rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: red;
+}
+
+nav > div{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    border: none;
+    align-items: flex-end;
+    text-align: right;
+}   
+
+section{
+    width: 94%;
+    margin: 0 auto;
+}
+
+#intro{
+    margin-top: 6rem;
+}
+
+#intro a:hover{
+    color: orange;
+}
+
+#intro p::first-letter{
+    float: left;
+    margin: 0 0.1em 0 0;
+    font-size: 2.5rem;
+    line-height: .7em;
+    display: block;
+    padding: .1em;
+    color: black;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
+
+#restaurants{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+    row-gap: 1rem;
+}
+
+.restaurant{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-weight: bold;
+}
+
+.restaurant img{
+    width: 250px;
+}
+
+i{
+    color: green;
+    border: solid 1px red;
+}
+
+footer{
+    background: whitesmoke;
+    padding: 2rem 4rem;
+}
+
+footer a{
+    text-decoration: none;
 }
