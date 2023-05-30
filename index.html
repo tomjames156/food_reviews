@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Tomi's Food Blog</title>
+    <title>Home | Tomi's Food Blog</title>
     <link rel="stylesheet" href="./blog.css">
 
     <!-- Google Font  Poppins-->
@@ -19,10 +18,11 @@
     
     <!-- Font Awesome Kit -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="blog.js"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S</span><br><span style="color: green">FOOD</span> <span style="color: red;">REVIEWS</span></a>
+        <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD</span> <span style="color: red;">REVIEWS</span></a>
         <div id="desktop-nav">
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT ME</a>
@@ -33,35 +33,137 @@
     <section id="intro">
         <p>Hey there, It's Tomi again and this week I'll be reviewing restaurants at the <a href="https://www.nileuniversity.edu.ng/">Nile University</a> Food Court. I've been at Nile University for a while now and I'll be sharing my thoughts about the various foods sold at the Bamboo Food Court. In this article, I list out the food vendors I've tried and giving them a rating out of five (5) stars. The rating is based on the taste of the food obviously, overall aesthetics, and waiting time for an order. You can also click a restaurant to view their menu and the full review. </p>
     </section>
+    <section id="intro_restaurants">
+        <h2>The Restaurants</h2>
+        <p>These are the availabe restaurants and food vendors at Nile University of Nigeria in no particular "order"😏. The vendors who have a space to sit are under the restaurant category while the rest are just food vendors.</p>
+    </section>
     <section id="restaurants">
-        <div class="restaurant" id="paparimz">
-            <img src="images/paparimz.jpeg" alt="Papa Rimz Pizza">
-            <p class="name">Papa Rimz Pizza</p>
-            <div><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i></div>
+        <div class="restaurant" id="tray_blazers">
+            <div>
+                <img onclick="displayReview('Tray Blazers', 4.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['tray_blazers.jpeg', 'fried rice'], [7, 5, 6, 8])" src="images/tray_blazers.jpeg" alt="fried rice">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">Tray Blazers</p>
         </div>
         <div class="restaurant" id="suya_craze">
-            <img src="images/suya_craze.jpeg" alt="Suya Craze">
+            <div>
+                <img onclick="displayReview('Suya Craze', 3.0, `Suya Craze, is a restaurant and probably the first place you think of when you think of food court in Nile. The aesthetics with the black bamboo shade is quite nice. However, the food is just not that good. The suya is the only thing you should get if you have to order something from them. It\'s an awesome spot to chill at food court and it looks even better at night. The customer service is terrible and orders can take about 25 minutes to get ready which is not reasonable in my opinion.`, ['suya_craze.jpeg', 'suya on a grill'], [7, 5, 9, 8])" src="images/suya_craze.jpeg" alt="suya on a grill">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
             <p class="name">Suya Craze</p>
         </div>
+        <div class="restaurant" id="milkshakers">
+            <div>
+                <img onclick="displayReview('Street Food', 4.0, 'It\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really good', ['milkshakers.jpeg', 'oreo milkshake with caramel'], [7, 5, 6, 8])" src="images/milkshakers.jpeg" alt="oreo milkshake with caramel">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">Street Food</p>
+        </div>
+        <div class="restaurant" id="w_sauce">
+            <div>
+                <img onclick="displayReview('W-Sauce', 3.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['shawarma.jpeg', 'shawarma'], [7, 5, 6, 8])" src="images/shawarma.jpeg" alt="shawarma">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">W-Sauce</p>
+        </div>
+        <div class="restaurant" id="quintavi">
+            <div>
+                <img onclick="displayReview('Quintavi', 5.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['quintavi.jpeg', 'cheese burger'], [7, 5, 6, 8])" src="images/quintavi.jpeg" alt="cheese burger">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">Quintavi</p>
+        </div>
+        <div class="restaurant" id="paparimz">
+            <div>
+                <img onclick="displayReview('PapaRimz Pizza', 4.5, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['paparimz.jpeg', 'pizza in a box with ginger drink and chicken side'], [7, 5, 6, 8])" src="images/paparimz.jpeg" alt="pizza in a box with ginger drink and chicken side">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">Papa Rimz Pizza</p>
+        </div>
         <div class="restaurant" id="zulkys">
-            <img src="images/zulkys.jpg" alt="Zulkys">
+            <div>
+                <img onclick="displayReview('Zulkys', 4.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['zulkys.jpg', 'shawarma'], [7, 5, 6, 8])" src="images/zulkys.jpg" alt="shawarma">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
             <p class="name">Zulky's Cafe</p>
         </div>
-        <div class="restaurant" id="zulkys">
-            <img src="images/shawarma.jpeg" alt="Zulkys">
-            <p class="name">Zulky's Cafe</p>
+        <div class="restaurant" id="african_kitchen">
+            <div>
+                <img onclick="displayReview('African Kitchen', 4.5, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['african_kitchen.jpeg', 'nigerian jollof rice'], [7, 5, 6, 8])" src="images/african_kitchen.jpeg" alt="nigerian jollof rice">
+                <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
+            </div>
+            <p class="name">African Kitchen</p>
         </div>
-        <div class="restaurant" id="milkshakers">
-            <img src="images/milkshake.jpeg" alt="Milkshakers">
-            <p class="name">Milkshakers</p>
-        </div>
-        <div class="restaurant" id="milkshakers">
-            <img src="images/milkshake.jpeg" alt="Milkshakers">
-            <p class="name">Milkshakers</p>
+        <div id="full_review" class="full_review">
+            <div>
+                <img id="review_image" src="images/suya_craze.jpeg" alt="fried rice">
+                <p id="vendor_name" class="name"></p>
+                <span id="rating" class="rating">Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                <button>Download Menu</button>
+            </div>
+            <div class="review">
+                <div>
+                    <h4>Full Review</h4>
+                    <p id="full_review_text"></p>
+                </div>
+                <div>
+                    <h4>Review Summary</h4>
+                    <ul id="review_list">
+                        <li><i class="fa-solid fa-camera-retro fa-sm"></i>Aesthetics: <span class="good">10/10</span></li>
+                        <li><i class="fa-solid fa-utensils fa-sm"></i> Food: <span class="okay">5/10</span></li>
+                        <li><i class="fa-solid fa-stopwatch fa-sm"></i>Wait Time: <span class="bad">0/10</span></li>
+                        <li><i class="fa-solid fa-bell-concierge fa-sm"></i>Customer Service: <span class="bad">-5/10</span></li>
+                    </ul>
+                </div>
+                <div id="color-coding">
+                    <h4>Color Coding</h4>
+                    <div>
+                        <div>
+                            <span class="good box"></span>
+                            <p>Good</p>
+                        </div>
+                        <div>
+                            <span class="box okay"></span>
+                            <p>Okay</p>
+                        </div>
+                        <div>
+                            <span class="box bad"></span>
+                            <p>Bad</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="close_review">
+                    <i class="fa-solid fa-xmark fa-2xl"></i>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
-        <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S</span><br><span style="color: green">FOOD</span><span style="color: red;">REVIEWS</span></a>
+        <div class="container">
+            <div>
+                <div id="name">
+                    <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD </span><span style="color: red;">REVIEWS</span></a>
+                </div>
+                <div class="links">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Me</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </div>
+            <div>
+                <h3>Follow Me</h3>
+                <div class="socials">
+                    <a href="">Instagram<i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="">Twitter<i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="">Linkedin<i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <small class="copyright">
+            &copy; Copyright Tomisin Akinwande, 2023
+        </small>
     </footer>
 </body>
 </html>
