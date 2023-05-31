@@ -92,3 +92,8 @@ function getColorCode(score){
         return 'bad';
     }
 }
+
+
+
+
+// About Page
