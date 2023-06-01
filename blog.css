@@ -38,6 +38,7 @@ nav{
     z-index: 5;
     background: whitesmoke;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     padding: 0 0 0 3rem;
@@ -58,7 +59,7 @@ nav a:hover{
 
 nav > div{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
     border: none;
     align-items: flex-end;
@@ -68,6 +69,10 @@ nav > div{
 section{
     width: 94%;
     margin: 0 auto;
+}
+
+#mobile-nav{
+    display: none;
 }
 
 #intro{
@@ -353,6 +358,7 @@ footer .content-container{
 
 .blog-posts img{
     width: 75px;
+    border-radius: 0.2rem;
 }
 
 .blog-posts a{
@@ -360,6 +366,11 @@ footer .content-container{
     column-gap: 1rem;
     text-align: left;
     margin: 0 0 0 0.25rem;
+    transition: all ease 0.1s;
+}
+
+.blog-posts a:hover img{
+    filter: grayscale(35%);
 }
 
 .blog-posts a h4{
@@ -386,13 +397,6 @@ footer .links{
 footer .links h3{
     margin-bottom: 0.5rem;
 }
-
-footer a{
-    font-size: 0.85rem;
-    cursor: pointer;
-    padding: 0 0 0 0.25rem;
-}
-
 footer .links a:hover{
     color: red;
 }
@@ -416,6 +420,9 @@ footer a:hover, footer a:hover i{
 footer a{
     font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0 0 0 0.25rem;
 }
 
 #to_top{
@@ -435,6 +442,21 @@ small{
 }
 
 @media screen and (max-width: 550px) {
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #mobile-nav{
+        display: unset;
+    }
+
+    #mobile-nav i{
+        color: black;
+        cursor: pointer;
+        text-shadow: none;
+    }
+    
     nav{
         padding: 0 0.5rem 0 1rem;
     }
@@ -454,6 +476,10 @@ small{
     
     .content-container > div:nth-of-type(3){
         order: 3;
+    }
+
+    footer a{
+        padding: 0;
     }
 }
 
@@ -477,8 +503,9 @@ small{
 #intro #my-image-container img{
     width: 60%;
     overflow: hidden;
-    filter: blur(5px);
+    transition: all ease 0.5s;
     border-radius: 1rem;
+    box-shadow: 12px 15px 25px rgba(0,0,0,0.12), 0 1px 2px gray;
 }
 
 #intro #my-image-container i{

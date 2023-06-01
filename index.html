@@ -30,6 +30,9 @@
             <a href="gallery.html">GALLERY</a>
             <a href="contact.html">CONTACT</a>
         </div>
+        <div id="mobile-nav" title="Open Menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
     </nav>
     <section id="intro">
         <p class="drop">Hey there, It's Tomi again and this week I'll be reviewing restaurants at the <a href="https://www.nileuniversity.edu.ng/">Nile University</a> Food Court. I've been at Nile University for a while now and I'll be sharing my thoughts about the various foods sold at the Bamboo Food Court. In this article, I list out the food vendors I've tried and giving them a rating out of five (5) stars. The rating is based on the taste of the food obviously, overall aesthetics, and waiting time for an order. You can also click a restaurant to view their menu and the full review. </p>
@@ -41,56 +44,56 @@
     <section id="restaurants">
         <div class="restaurant" id="tray_blazers">
             <div>
-                <img onclick="displayReview('Tray Blazers', 4.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['tray_blazers.jpeg', 'fried rice'], [7, 5, 6, 8])" src="images/tray_blazers.jpeg" alt="fried rice">
+                <img onclick="showReview(restaurants_info[0])" src="images/tray_blazers.jpeg" alt="fried rice">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Tray Blazers</p>
         </div>
         <div class="restaurant" id="suya_craze">
             <div>
-                <img onclick="displayReview('Suya Craze', 3.0, `Suya Craze, is a restaurant and probably the first place you think of when you think of food court in Nile. The aesthetics with the black bamboo shade is quite nice. However, the food is just not that good. The suya is the only thing you should get if you have to order something from them. It\'s an awesome spot to chill at food court and it looks even better at night. The customer service is terrible and orders can take about 25 minutes to get ready which is not reasonable in my opinion.`, ['suya_craze.jpeg', 'suya on a grill'], [7, 5, 9, 8])" src="images/suya_craze.jpeg" alt="suya on a grill">
+                <img onclick="showReview(restaurants_info[1])" src="images/suya_craze.jpeg" alt="suya on a grill">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Suya Craze</p>
         </div>
         <div class="restaurant" id="milkshakers">
             <div>
-                <img onclick="displayReview('Street Food', 4.0, 'It\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really goodIt\'s really really really good', ['milkshakers.jpeg', 'oreo milkshake with caramel'], [7, 5, 6, 8])" src="images/milkshakers.jpeg" alt="oreo milkshake with caramel">
+                <img onclick="showReview(restaurants_info[2])" src="images/milkshakers.jpeg" alt="oreo milkshake with caramel">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Street Food</p>
         </div>
         <div class="restaurant" id="w_sauce">
             <div>
-                <img onclick="displayReview('W-Sauce', 3.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['shawarma.jpeg', 'shawarma'], [7, 5, 6, 8])" src="images/shawarma.jpeg" alt="shawarma">
+                <img onclick="showReview(restaurants_info[3])" src="images/shawarma.jpeg" alt="shawarma">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">W-Sauce</p>
         </div>
         <div class="restaurant" id="quintavi">
             <div>
-                <img onclick="displayReview('Quintavi', 5.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['quintavi.jpeg', 'cheese burger'], [7, 5, 6, 8])" src="images/quintavi.jpeg" alt="cheese burger">
+                <img onclick="showReview(restaurants_info[4])" src="images/quintavi.jpeg" alt="cheese burger">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Quintavi</p>
         </div>
         <div class="restaurant" id="paparimz">
             <div>
-                <img onclick="displayReview('PapaRimz Pizza', 4.5, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['paparimz.jpeg', 'pizza in a box with ginger drink and chicken side'], [7, 5, 6, 8])" src="images/paparimz.jpeg" alt="pizza in a box with ginger drink and chicken side">
+                <img onclick="showReview(restaurants_info[5])" src="images/paparimz.jpeg" alt="pizza in a box with ginger drink and chicken side">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Papa Rimz Pizza</p>
         </div>
         <div class="restaurant" id="zulkys">
             <div>
-                <img onclick="displayReview('Zulkys', 4.0, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['zulkys.jpg', 'shawarma'], [7, 5, 6, 8])" src="images/zulkys.jpg" alt="shawarma">
+                <img onclick="showReview(restaurants_info[6])" src="images/zulkys.jpg" alt="shawarma">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">Zulky's Cafe</p>
         </div>
         <div class="restaurant" id="african_kitchen">
             <div>
-                <img onclick="displayReview('African Kitchen', 4.5, `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`, ['african_kitchen.jpeg', 'nigerian jollof rice'], [7, 5, 6, 8])" src="images/african_kitchen.jpeg" alt="nigerian jollof rice">
+                <img onclick="showReview(restaurants_info[7])" src="images/african_kitchen.jpeg" alt="nigerian jollof rice">
                 <span class="info"><i class="fa-solid fa-utensils"></i> View Full Review</span>
             </div>
             <p class="name">African Kitchen</p>
@@ -164,14 +167,14 @@
             <div class="blog-posts">
                 <h3>BLOG POSTS</h3>
                 <a href="about.html">
-                    <img src="images/IMG-20230421-WA0009.jpg" alt="">
+                    <img src="images/tomi_cilantro.jpg" alt="tomi at cilantro abuja">
                     <span>
-                        <h4>Tomi</h4>
+                        <h4>About Me</h4>
                         <p>Get To Know Me</p>
                     </span>
                 </a>
                 <a href="gallery.html">
-                    <img src="images/IMG_8582.jpg" alt="">
+                    <img src="images/tomi_black.jpeg" alt="tomi standing beside a car">
                     <span>
                         <h4>Recent Places</h4>
                         <p>Reviews Coming Soon...</p>
