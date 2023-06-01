@@ -23,7 +23,6 @@
     <script defer src="about.js"></script>
 </head>
 <body>
-    <span id="top"></span>
     <nav id="nav">
         <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD</span> <span style="color: red;">REVIEWS</span></a>
         <div id="desktop-nav">
@@ -32,82 +31,92 @@
             <a href="gallery.html">GALLERY</a>
             <a href="contact.html">CONTACT</a>
         </div>
-        <div id="mobile-nav" title="Open Menu">
+        <div id="mobile-nav-btn" title="Open Menu">
             <i class="fa-solid fa-bars fa-2xl"></i>
         </div>
     </nav>
-    <section class="about" id="intro">
-        <h1>About Me</h1>
-        <p>Hey there👋🏾, you probably clicked on this link to know more about me. Well, my full name is Tomisin but I go by Tomi. I am a software engineer and Software Engineering student at <a href="https://www.nileuniversity.edu.ng/">Nile University of Nigeria</a> with a 19 years of eating experience. When I'm not in school or coding, I'm usually eating and I've been able to visit some nice Restaurants which I post reviews of when i have some free time.</p>
-        <p>I am a Nigerian from Lagos, Nigeria. As a Yoruba individual I enjoy eating spicy🌶️ food. My favourite food is undecided but just know I like eating. I love Nigerian food a lot cuz it tastes awesome and is highly nutritious. However, I don't like diary foods like ice-cream, milk and cheese, I also do not like soda because it's terribly unhealthy, and I'm incapable of eating oats, custard and pap (the textures are weird), so you won't be getting any reviews on such foods.</p>
-        <p>Apart from eating, I like reading, solving mathematics, swimming, programming and sleeping. Especially programming and problem solving, because it gets my brain gears⚙️ moving. In essence, my interest in programming and eating hobby led to the creation of this blog.</p>
-        <div id="my-image-container">
-            <img id="my-image" src="images/tomi_eating.jpg" alt="tomi holding his phone while eating">
-            <span><i class="fa-solid fa-location-dot fa-sm"></i>Transcorp Calabar</span>
-        </div>
-    </section>
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <p>You can contact me via my phone number or email to invite me to your restaurant for a free meal🫕 and an honest review😊.</p>
-        <div>
-            <div>
-                <i class="fa-solid fa-location-dot fa-xl"></i>
-                <span>Abuja, Nigeria</span>
+    <div id="side-nav" class="hide">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+        <i id="close-side-nav" class="fa-solid fa-xmark fa-2xl" title="Close Menu"></i>
+    </div>
+    <main>
+        <span id="top"></span>
+        <section class="about" id="intro">
+            <h1>About Me</h1>
+            <p>Hey there👋🏾, you probably clicked on this link to know more about me. Well, my full name is Tomisin but I go by Tomi. I am a software engineer and Software Engineering student at <a href="https://www.nileuniversity.edu.ng/">Nile University of Nigeria</a> with a 19 years of eating experience. When I'm not in school or coding, I'm usually eating and I've been able to visit some nice Restaurants which I post reviews of when i have some free time.</p>
+            <p>I am a Nigerian from Lagos, Nigeria. As a Yoruba individual I enjoy eating spicy🌶️ food. My favourite food is undecided but just know I like eating. I love Nigerian food a lot cuz it tastes awesome and is highly nutritious. However, I don't like diary foods like ice-cream, milk and cheese, I also do not like soda because it's terribly unhealthy, and I'm incapable of eating oats, custard and pap (the textures are weird), so you won't be getting any reviews on such foods.</p>
+            <p>Apart from eating, I like reading, solving mathematics, swimming, programming and sleeping. Especially programming and problem solving, because it gets my brain gears⚙️ moving. In essence, my interest in programming and eating hobby led to the creation of this blog.</p>
+            <div id="my-image-container">
+                <img id="my-image" src="images/tomi_eating.jpg" alt="tomi holding his phone while eating">
+                <span><i class="fa-solid fa-location-dot fa-sm"></i>Transcorp Calabar</span>
             </div>
+        </section>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>You can contact me via my phone number or email to invite me to your restaurant for a free meal🫕 and an honest review😊.</p>
             <div>
-                <i class="fa-solid fa-phone fa-xl"></i>
-                <span>+234 706-829-3037</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope fa-xl"></i>
-                <span>tomjames156@gmail.com</span>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div id="name">
-            <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD </span><span style="color: red;">REVIEWS</span></a>
-        </div>
-        <div class="content-container">
-            <div>
-                <div class="links">
-                    <h3>LINKS</h3>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact Me</a>
-                    <a href="gallery.html">Gallery</a>
+                <div>
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <span>Abuja, Nigeria</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                    <span>+234 706-829-3037</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <span>tomjames156@gmail.com</span>
                 </div>
             </div>
-            <div>
-                <div class="socials">
-                    <h3>FOLLOW ME</h3>
-                    <a href="https://www.instagram.com/tomisin_akinwande/">Instagram<i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="https://mobile.twitter.com/tomisnakinwande">Twitter<i class="fa-brands fa-twitter fa-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/tomisin-akinwande-981842247">Linkedin<i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+        </section>
+        <footer>
+            <div id="name">
+                <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD </span><span style="color: red;">REVIEWS</span></a>
+            </div>
+            <div class="content-container">
+                <div>
+                    <div class="links">
+                        <h3>LINKS</h3>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Me</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="socials">
+                        <h3>FOLLOW ME</h3>
+                        <a href="https://www.instagram.com/tomisin_akinwande/">Instagram<i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="https://mobile.twitter.com/tomisnakinwande">Twitter<i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/tomisin-akinwande-981842247">Linkedin<i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </div>
+                </div>
+                <div class="blog-posts">
+                    <h3>BLOG POSTS</h3>
+                    <a href="about.html">
+                        <img src="images/tomi_cilantro.jpg" alt="tomi at cilantro abuja">
+                        <span>
+                            <h4>About Me</h4>
+                            <p>Get To Know Me</p>
+                        </span>
+                    </a>
+                    <a href="gallery.html">
+                        <img src="images/tomi_black.jpeg" alt="tomi standing beside a car">
+                        <span>
+                            <h4>Recent Places</h4>
+                            <p>Reviews Coming Soon...</p>
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div class="blog-posts">
-                <h3>BLOG POSTS</h3>
-                <a href="about.html">
-                    <img src="images/tomi_cilantro.jpg" alt="tomi at cilantro abuja">
-                    <span>
-                        <h4>About Me</h4>
-                        <p>Get To Know Me</p>
-                    </span>
-                </a>
-                <a href="gallery.html">
-                    <img src="images/tomi_black.jpeg" alt="tomi standing beside a car">
-                    <span>
-                        <h4>Recent Places</h4>
-                        <p>Reviews Coming Soon...</p>
-                    </span>
-                </a>
-            </div>
-        </div>
-        <a href="#top" id="to_top"><i class="fa-solid fa-arrow-up"></i> Back To Top</a>
-        <small class="copyright">
-            &copy; Copyright Tomisin Akinwande, 2023
-        </small>
-    </footer>
+            <a href="#top" id="to_top"><i class="fa-solid fa-arrow-up"></i> Back To Top</a>
+            <small class="copyright">
+                &copy; Copyright Tomisin Akinwande, 2023
+            </small>
+        </footer>
+    </main>
 </body>
 </html>

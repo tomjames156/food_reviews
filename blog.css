@@ -13,6 +13,7 @@ body{
     font-family: 'Bitter', 'Poppins', Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     background: whitesmoke;
+    position: relative;
 }
 
 #brand_name{
@@ -32,10 +33,14 @@ a{
     color: black;
 }
 
+main{
+    position: absolute;
+}
+
 nav{
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 7;
     background: whitesmoke;
     display: flex;
     justify-content: space-between;
@@ -64,19 +69,23 @@ nav > div{
     border: none;
     align-items: flex-end;
     text-align: right;
-}   
+}  
+
+#side-nav{
+    display: none;
+}
 
 section{
     width: 94%;
     margin: 0 auto;
 }
 
-#mobile-nav{
+#mobile-nav-btn{
     display: none;
 }
 
 #intro{
-    margin-top: 6rem;
+    padding-top: 6rem;
     font-size: 1.1rem;
 }
 
@@ -447,11 +456,54 @@ small{
         display: none;
     }
 
-    #mobile-nav{
+    #side-nav{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        z-index: 17 !important;
+        padding: 3rem 0 0 0;
+        transition: all ease 0.5s;
+        box-shadow: 0 1px 15px rgba(0,0,0,0.12), 0 1px 2px whitesmoke;
+    }
+
+    #side-nav a{
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.75rem 2rem;
+        border-bottom: solid 1px black;
+    }
+
+    #side-nav a:hover{
+        color: #222;
+        background: #d3d3d3;
+    }
+
+    #side-nav i{
+        position: absolute;
+        top: 1.5rem;
+        color: black;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    #side-nav.hide{
+        width: 0;
+    }
+
+    #side-nav.hide a{
+        display: none;
+    }
+
+    #mobile-nav-btn{
         display: unset;
     }
 
-    #mobile-nav i{
+    #mobile-nav-btn i{
         color: black;
         cursor: pointer;
         text-shadow: none;
@@ -505,7 +557,7 @@ small{
     overflow: hidden;
     transition: all ease 0.5s;
     border-radius: 1rem;
-    box-shadow: 12px 15px 25px rgba(0,0,0,0.12), 0 1px 2px gray;
+    box-shadow: 4px 5px 5px rgba(0,0,0,0.12), 0 1px 2px gray;
 }
 
 #intro #my-image-container i{
