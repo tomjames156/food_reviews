@@ -19,6 +19,8 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3dc4ae978d.js"
     crossorigin="anonymous"></script>
+
+    <script defer src="gallery.js"></script>
 </head>
 <body>
     <nav id="nav">
@@ -26,7 +28,7 @@
         <div id="desktop-nav">
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT ME</a>
-            <a href="gallery.html">GALLERY</a>
+            <a href="gallery.html" style="font-weight: bold;">GALLERY</a>
             <a href="contact.html">CONTACT</a>
         </div>
         <div id="mobile-nav-btn" title="Open Menu">
@@ -41,7 +43,71 @@
         <i id="close-side-nav" class="fa-solid fa-xmark fa-2xl" title="Close Menu"></i>
     </div>
     <main>
-        <span id="top"></span>  
+        <span id="top"></span>
+        <section id="intro">
+            <h1>Gallery</h1>
+            <p>These are pictures of places I've been to recently, I'll post reviews on these locations soon😊. For now just enjoy the pictures i took while I was there. You can see the locations of the places below the pictures and also hover (on PC💻) over the picture to see my rating of the place. Follow me on <a href="https://www.instagram.com/tomisin_akinwande/">Instagram</a> to see places I've been to earlier than when I post updates on the blog.</p>
+        </section>
+        <section id="places">
+            <div class="places-container">
+                <div class="place">
+                    <img src="images/tomi_cilantro.jpeg" alt="">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Cilantro, Abuja</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="place chinese">
+                    <img src="images/tomi_golden_dragon_restaurant.jpeg" alt="Tomi at Golden Dragon Restaurant Calabar">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Golden Dragon Restaurant, Calabar</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                </div>
+                <div class="place">
+                    <img src="images/tomi_tinapa.jpeg" alt="Tomi at Cilantro Abuja">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Tinapa Water Park, Calabar</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="place eating">
+                    <img src="images/tomi_eating.jpg" alt="Tomi at Transcorp Calabar">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Transcorp, Calabar</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                </div>
+                <div class="place">
+                    <img src="images/tomi_black.jpeg" alt="Tomi at Christmas village standing next to a car">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Christmas Village, Calabar</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="place">
+                    <img src="images/tomi_transcorp.jpeg" alt="">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Transcorp Hilton, Abuja</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="place final">
+                    <img src="images/tomi_dominoes.jpeg" alt="Tomi at dominoes with siblings">
+                    <div>
+                        <span><i class="fa-solid fa-location-dot fa-sm"></i> Dominoes Pizza, Calabar</span>
+                        <div class="my_rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                    <div class="my_rating_mobile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                </div>
+            </div>
+        </section> 
         <footer>
             <div id="name">
                 <a href="index.html" id="brand_name"><span style="color: orange">TOMI'S <i class="fa-solid fa-utensils fa-xl"></i></span><br><span style="color: green">FOOD </span><span style="color: red;">REVIEWS</span></a>

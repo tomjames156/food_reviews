@@ -182,6 +182,7 @@ section{
     width: 240px;
     height: 320px;
     border-radius: 0.25rem;
+    border: solid 2px black;
 }
 
 .review_list li{
@@ -452,6 +453,10 @@ small{
 
 @media screen and (max-width: 550px) {
 
+    #brand_name{
+        width: 60%;
+    }
+
     #desktop-nav{
         display: none;
     }
@@ -463,7 +468,7 @@ small{
         width: 70%;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: whitesmoke;
         z-index: 17 !important;
         padding: 3rem 0 0 0;
         transition: all ease 0.5s;
@@ -532,6 +537,12 @@ small{
 
     footer a{
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #brand_name{
+        width: 95%;
     }
 }
 
@@ -604,5 +615,121 @@ small{
 @media screen and (max-width: 550px) {
     #intro #my-image-container img{
         width: 90%;
+    }
+}
+
+
+
+/* Gallery Page */
+
+#places{
+    margin-top: 2rem;
+    padding: 2rem 0;
+    box-shadow: 5px 7px 15px #d3d3d3;
+    border-radius: 0.5rem;
+}
+
+.places-container{
+    display: flex;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.place{
+    position: relative;
+    text-align: center;
+    flex: 25%;
+    height: auto;
+}
+
+.places-container img{
+    width: 100%;
+    height: auto;
+    border: solid 2px black;
+    border-radius: 0.25rem;
+}
+
+.place.check_rating img{
+    filter: grayscale(50%);
+}
+
+.place.eating, .place.chinese{
+    flex-grow: 2;
+}
+
+.place.final{
+    flex-grow: 0;
+}
+
+.place > div{
+    text-align: center;
+}
+
+.place div span{
+    font-size: 0.9rem;
+}
+
+.place div span i{
+    color: #ff6517;
+    text-shadow: none;
+}
+
+.place .my_rating{
+    display: none;
+}
+
+.place.check_rating .my_rating{
+    position: absolute;
+    display: unset;
+    transition: all ease 300ms;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my_rating_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .places-container{
+        gap: 1rem;
+    }
+
+    .place{
+        flex: 45%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .my_rating_mobile{
+        display: unset
+    }
+
+    .place.check_rating .my_rating{
+        display: none;
+    }
+
+    .place.check_rating img{
+        filter: none;
+    }
+
+    .places-container{
+        gap: 1rem;
+    }
+
+    .place{
+        flex: 90%;
+    }
+
+    .place.eating, .place.chinese{
+        flex-grow: calc(1/4);
+    }
+
+    .place.final{
+        flex: 1/2;
     }
 }
