@@ -90,7 +90,7 @@ const restaurants_info = [
 
 function showReview(restaurant_obj){
     vendorName.innerHTML = restaurant_obj.restaurant_name;
-    reviewRating.innerHTML = `Rating ${computeRating(restaurant_obj.rating)}`;
+    reviewRating.innerHTML = `<span id="rating_text">Rating</span> ${computeRating(restaurant_obj.rating)}`;
     if (restaurant_obj.review == ''){
         reviewText.innerHTML = `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`;
     }else{
