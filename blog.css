@@ -468,7 +468,10 @@ small{
         width: 70%;
         display: flex;
         flex-direction: column;
-        background: whitesmoke;
+        background: bisque;
+        border-right: solid 2px black;
+        border-top-right-radius: 0.25rem;
+        border-top: solid 2px black;
         z-index: 17 !important;
         padding: 3rem 0 0 0;
         transition: all ease 0.5s;
@@ -484,8 +487,7 @@ small{
     }
 
     #side-nav a:hover{
-        color: #222;
-        background: #d3d3d3;
+        background: rgb(214, 191, 164);
     }
 
     #side-nav i{
