@@ -5,6 +5,7 @@ let reviewImage = document.getElementById('review_image');
 let reviewRating = document.getElementById('rating');
 let reviewText = document.getElementById('full_review_text');
 let reviewList = document.getElementById('review_list');
+let viewMenuLink = document.getElementById('view_menu');
 const restaurants = document.querySelectorAll('.restaurant');
 const sideNavBtn = document.getElementById('mobile-nav-btn');
 const closeSideNavBtn = document.getElementById('close-side-nav');
@@ -103,6 +104,7 @@ function showReview(restaurant_obj){
     <li><i class="fa-solid fa-bell-concierge fa-sm"></i>Customer Service: <span class=${getColorCode(restaurant_obj.reviews_list[3])}>${restaurant_obj.reviews_list[3]}/10</span></li>`;
     reviewImage.setAttribute('src', `images/${restaurant_obj.image_info[0]}`);
     reviewImage.setAttribute('alt', restaurant_obj.image_info[1]);
+    viewMenuLink.setAttribute('href', `images/${restaurant_obj.image_info[0]}`)
 }
 
 function computeRating(rating){

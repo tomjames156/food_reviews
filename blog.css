@@ -242,8 +242,9 @@ li i{
     border-radius: 0.25rem;
 }
 
-.full_review button{
+.full_review a#view_menu{
     background: black;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -526,7 +527,7 @@ small{
     }
 
     .full_review{
-        column-gap: 1rem;
+        column-gap: 1.5rem;
     }
 
     .full_review div:first-of-type{
