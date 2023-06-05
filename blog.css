@@ -759,7 +759,7 @@ small{
 #contact-info{
     margin-top: 2rem;
     width: 90%;
-    background: white;
+    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
     border: solid 2px black;
@@ -813,6 +813,7 @@ small{
     flex-direction: column;
     row-gap: 2rem;
     width: 60%;
+    background-color: white;
     border-left: solid 2px black;
 }
 
@@ -847,6 +848,7 @@ input, textarea{
     padding: 0.25rem 0;
     font-family: sans-serif;
     border-bottom: solid 1px #d0d0d0;
+    background: transparent;
     border-top: 0;
     border-left: 0;
     border-right: 0;
