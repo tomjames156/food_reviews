@@ -500,6 +500,7 @@ small{
 
     #side-nav.hide{
         width: 0;
+        border: none;
     }
 
     #side-nav.hide a{
@@ -750,5 +751,184 @@ small{
 
     .place.final{
         flex: 1/2;
+    }
+}
+
+/* Contact Section */
+
+#contact-info{
+    margin-top: 2rem;
+    width: 90%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px black;
+}
+
+.my-info{
+    width: 40%;
+    background: bisque;
+    padding: 3rem 1.5rem 5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.my-info i{
+    color: black;
+    text-shadow: none;
+}
+
+.contact-objects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-objects a{
+    text-decoration: none;
+}
+
+.contact-obj i{
+    border: solid 1px #ff6517;
+    border-radius: 50%;
+    padding: 1.5rem 0.8rem;
+}
+
+.contact-obj.address i{
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+}
+
+.contact-obj{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+#message_form{
+    padding: 3rem 1.5rem 5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 60%;
+    border-left: solid 2px black;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.inputs div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.inputs label{
+    font-size: 0.80rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.inputs > span, .inputs div{
+    width: 100%;
+}
+
+.inputs span{
+    display: flex;
+    column-gap: 2rem;
+}
+
+input, textarea{
+    padding: 0.25rem 0;
+    font-family: sans-serif;
+    border-bottom: solid 1px #d0d0d0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border-bottom: solid 2px black ;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 0.9rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+#send_btn{
+    background: rgba(255, 228, 196, 0.75);
+    border: none;
+    width: fit-content;
+    color: black;
+    padding:  0.9rem 1rem;
+    border: solid 1.5px black;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-info{
+        row-gap: 2rem;
+        flex-direction: column-reverse;
+        border: none;
+    }
+    
+    .my-info{
+        padding: 3rem 1.5rem 5rem 1.5rem;
+        width: 100%;
+        border-radius: 0.25rem;
+    }
+
+    #message_form{
+        width: 100%;
+        padding: 3rem 1.5rem 5rem 1.5rem;
+        border: solid 2px black;
+        border-radius: 0.25rem;
+    }
+
+    .inputs span{
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .contact-obj > span{
+        font-size: 0.8rem;
+    }
+
+    .my-info{
+        padding: 3rem 0.5rem 5rem 0.5rem;
+        width: 100%;
+        border-radius: 0.25rem;
+    }
+
+    #message_form{
+        width: 100%;
+        padding: 3rem 0.5rem 5rem 0.5rem;
+        border: solid 2px black;
+        border-radius: 0.25rem;
     }
 }
