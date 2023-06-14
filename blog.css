@@ -273,6 +273,15 @@ li i{
     font-size: 1.1rem;
 }
 
+.rating{
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.15rem;
+}
+
 .bad{
     color: red;
     font-weight: bold;
@@ -889,6 +898,11 @@ form{
     font-family: sans-serif;
     text-decoration: none;
     cursor: pointer;
+    transition: all ease 500ms;
+}
+
+#send_btn:hover{
+    background: rgb(255, 228, 196);
 }
 
 @media screen and (max-width: 1000px) {

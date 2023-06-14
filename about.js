@@ -33,21 +33,6 @@ const my_pictures = [
     {image: 'tomi_transcorp.jpeg', alt_text: "Tomi at the transcorp hilton entrance in Abuja", location: "Transcorp Hilton, Abuja"}
 ];
 
-// function generateRandomIndex(array){
-//     return Math.floor(Math.random() * array.length)
-// }
-
-// setInterval(() => { 
-//     let index = generateRandomIndex(my_pictures);
-//     let newImageSource = 'images/' + my_pictures[index].image;
-//     while(newImageSource == myImage.src){
-//         index = generateRandomIndex(my_pictures);
-//     }
-//     myImage.src = 'images/' + my_pictures[index].image; 
-//     myImage.alt = my_pictures[index].alt_text;
-//     imageLocation.innerHTML = '<i class="fa-solid fa-location-dot fa-sm"></i>' + my_pictures[index].location;
-// }, 18000);
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -61,7 +46,7 @@ function changeImageDetails(image_obj){
 (async function changeImage(){
     for(let i = 0; i < my_pictures.length; i++){
         changeImageDetails(my_pictures[i]);
-        await sleep(20000);
+        await sleep(60000);
     }
     changeImageDetails(my_pictures[0]);
 })();

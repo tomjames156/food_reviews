@@ -5,7 +5,6 @@ let reviewImage = document.getElementById('review_image');
 let reviewRating = document.getElementById('rating');
 let reviewText = document.getElementById('full_review_text');
 let reviewList = document.getElementById('review_list');
-let viewMenuLink = document.getElementById('view_menu');
 const restaurants = document.querySelectorAll('.restaurant');
 const sideNavBtn = document.getElementById('mobile-nav-btn');
 const closeSideNavBtn = document.getElementById('close-side-nav');
@@ -79,19 +78,19 @@ function hideRestaurants(){
 }
 
 const restaurants_info = [
-    { restaurant_name: 'Tray Blazers', review: '', rating: 4.0, image_info:['tray_blazers.jpeg', 'fried rice'], reviews_list: [7, 5, 6, 8]},
+    { restaurant_name: 'Tray Blazers', review: 'Tray Blazers is a restaurant at Nile, they sell mostly African dishes. The aesthetics are nice but it looks plagiarized from Dominoes Pizza. The customer service is kind of awkward', rating: 4.0, image_info:['tray_blazers.jpeg', 'fried rice'], reviews_list: [7.5, 5, 6, 8]},
     { restaurant_name: 'Suya Craze', review: `Suya Craze, is a restaurant and probably the first place you think of when you think of food court in Nile. The aesthetics with the black bamboo shade is quite nice. However, the food is just not that good. The suya is the only thing you should get if you have to order something from them. It's an awesome spot to chill at food court and it looks even better at night. The customer service is terrible and orders can take about 25 minutes to get ready which is not reasonable in my opinion.`, rating: 3.0, image_info:['suya_craze.jpeg', 'suya on a grill'], reviews_list: [7, 5, -5, 0]},
     { restaurant_name: 'Street Food', review: '', rating: 4.0, image_info:['milkshakers.jpeg', 'oreo milkshake with caramel'], reviews_list: [7, 5, 6, 8]},
-    { restaurant_name: 'W-Sauce', review: '', rating: 3.0, image_info:['shawarma.jpeg', 'shawarma'], reviews_list: [7, 5, 6, 8]},
-    { restaurant_name: 'Quintavi', review: '', rating: 5.0, image_info:['quintavi.jpeg', 'cheese burger'], reviews_list: [7, 5, 6, 8]},
-    { restaurant_name: 'PapaRimz Pizza', review: '', rating: 4.5, image_info:['paparimz.jpeg', 'pizza in a box with ginger drink and chicken side'], reviews_list: [7, 5, 6, 8]},
-    { restaurant_name: 'Zulkys', review: '', rating: 4.0, image_info:['zulkys.jpg', 'shawarma'], reviews_list: [7, 5, 6, 8]},
-    { restaurant_name: 'African Kitchen', review: '', rating: 4.5, image_info:['african_kitchen.jpeg', 'nigerian jollof rice'], reviews_list: [7, 5, 6, 8]},
+    { restaurant_name: 'W-Sauce', review: `W-Sauceee, they're mostly known to sell shawarmas, they also sell fries too. I like their shawarma, it's good but their customer service is questionable and they put ketchup in the shawarmas which is a sinister act in my opinion.`, rating: 3.0, image_info:['shawarma.jpeg', 'shawarma'], reviews_list: [7, 7.5, 6, 6]},
+    { restaurant_name: 'Quintavi', review: 'Quintavi, the best place in the whole of food court. But my opinion may be subjective. they sell burgers, shawarma and chinese rice. My favourite thing to order from them is shawarma, it reminds me of food from like Cilantro which is a restaurant I love. Their rice is also good but the whole sausage in rice thing is weird. Another great but underrated spot at Food Court.', rating: 5.0, image_info:['quintavi.jpeg', 'cheese burger'], reviews_list: [2, 9.5, 9, 10]},
+    { restaurant_name: 'PapaRimz Pizza', review: `Papa Rimz is a food vendor with awesome stuff. They sell stuff like milkshakes, Chinese rice, shawarma, and spaghetti. I really like their stuff. Everything is just good and reliable. My favourite thing to get from them is literally any type of rice because it's just reminiscent of a Chinese restaurant. They should work on their outdoor aesthetics though. The place is too underrated.`, rating: 4.5, image_info:['paparimz.jpeg', 'pizza in a box with ginger drink and chicken side'], reviews_list: [0, 9.7, 10, 10]},
+    { restaurant_name: 'Zulkys', review: 'Zulkys is like a food truck and they sell regular junk food like shawarma, milkshakes and spaghetti. Their shawarma is overpriced in my opinion but it tastes awesome. They have the best milkshakes at the Food Court according to several sources. Their customer service is also okay.', rating: 4.0, image_info:['zulkys.jpg', 'shawarma'], reviews_list: [5, 8, 8, 7]},
+    { restaurant_name: 'African Kitchen', review: `African kitchen is the last restaurant at the food court and their outdoor sitting is very beautiful. They also sell affordable and good african foods like jollof rice and swallows. They also sell good jollof rice.`, rating: 4.5, image_info:['african_kitchen.jpeg', 'nigerian jollof rice'], reviews_list: [9, 8, 8, 7]},
 ]
 
 function showReview(restaurant_obj){
     vendorName.innerHTML = restaurant_obj.restaurant_name;
-    reviewRating.innerHTML = `<span id="rating_text">Rating</span> ${computeRating(restaurant_obj.rating)}`;
+    reviewRating.innerHTML = `<span id="rating_text">Rating: </span> ${computeRating(restaurant_obj.rating)}`;
     if (restaurant_obj.review == ''){
         reviewText.innerHTML = `It's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really goodIt's really really really good`;
     }else{
@@ -104,7 +103,6 @@ function showReview(restaurant_obj){
     <li><i class="fa-solid fa-bell-concierge fa-sm"></i>Customer Service: <span class=${getColorCode(restaurant_obj.reviews_list[3])}>${restaurant_obj.reviews_list[3]}/10</span></li>`;
     reviewImage.setAttribute('src', `images/${restaurant_obj.image_info[0]}`);
     reviewImage.setAttribute('alt', restaurant_obj.image_info[1]);
-    viewMenuLink.setAttribute('href', `images/${restaurant_obj.image_info[0]}`)
 }
 
 function computeRating(rating){
