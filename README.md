@@ -42,9 +42,9 @@ This is a Food Review Blog about available food vendors at Nile University of Ni
 
 ### Useful resources
 
-Colorlib Contact Form Design - [colorlib](https://preview.colorlib.com/theme/bootstrap/contact-form-02/)
-W3Schools - [w3schools](https://www.w3schools.com/)
-Fireship Youtube Channel - [on-scroll animation tutorial](https://www.youtube.com/watch?v=T33NN_pPeNI&list=WL&index=1)
+- Colorlib Contact Form Design - [colorlib](https://preview.colorlib.com/theme/bootstrap/contact-form-02/)
+- W3Schools - [w3schools](https://www.w3schools.com/)
+- Fireship Youtube Channel - [on-scroll animation tutorial](https://www.youtube.com/watch?v=T33NN_pPeNI&list=WL&index=1)
 
 ## Author
 
