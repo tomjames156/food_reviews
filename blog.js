@@ -124,8 +124,20 @@ function getColorCode(score){
     if(score > 7){
         return 'good';
     }else if(score > 4){
-        return 'okay';
+        return 'average';
     }else{
         return 'bad';
     }
 }
+
+const restaurantsObserver = new IntersectionObserver((items)=> {
+    items.forEach((item) => {
+        if(item.isIntersecting){
+            item.target.classList.add("show-restaurant")
+        }else{
+            item.target.classList.remove("show-restaurant")
+        }
+    })
+})
+
+restaurants.forEach((restaurant) => {restaurantsObserver.observe(restaurant)});

@@ -147,6 +147,26 @@ section{
     cursor: pointer;
     position: relative;
     margin: 0 auto;
+    opacity: 0.1;
+    transform: translateX(-200px);
+    transition: all ease 700ms;
+}
+
+.restaurant.show-restaurant{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.restaurant:nth-child(1), .restaurant:nth-child(5){
+    transition-delay: 300ms;
+}
+
+.restaurant:nth-child(2), .restaurant:nth-child(6){
+    transition-delay: 200ms;
+}
+
+.restaurant:nth-child(3), .restaurant:nth-child(7){
+    transition-delay: 100ms;
 }
 
 .restaurant .info{
@@ -278,7 +298,7 @@ li i{
     font-weight: bold;
 }
 
-.okay{
+.average{
     color: #ff6517;
     font-weight: bold;
 }
@@ -291,7 +311,7 @@ li i{
     background-color: green;
 }
 
-.box.okay{
+.box.average{
     background-color: #ff6517;
 }
 
@@ -523,6 +543,15 @@ small{
 
     .full_review{
         column-gap: 1.5rem;
+    }
+
+    .restaurant{
+        transform: translateY(150px);
+        transition-delay: 0s !important;
+    }
+
+    .restaurant.restaurant.show-restaurant{
+        translate: translateY(0);
     }
 
     .rating{

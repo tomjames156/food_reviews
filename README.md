@@ -13,7 +13,7 @@ My project is a Food Review Blog about available food vendors at Nile University
 
 ## Overview
 
-This is a Food Review Blog about available food vendors at Nile University of Nigeria. It is meant to provide relevant information to visitors and new students about the various food options at the Food Court. It is an original idea was built with HTML for the structuring, CSS for the styling and JavaScript for the interactiveness, animations and data-manipulation. It features a user friendly and responsive design for all mobile and desktop devices. The contact form was adapted from a free design template from ColorLib. The code for the is available on GitHub and the website is hosted on Netlify.
+This is a Food Review Blog about available food vendors at Nile University of Nigeria. It is meant to provide relevant information to visitors and new students about the various food options at the Food Court. It is an original idea was built with HTML for the structuring, CSS for the styling and JavaScript for the interactiveness, animations and data-manipulation. It features a user friendly and responsive design for all mobile and desktop devices. The contact form was adapted from a free design template from ColorLib. The code for the is available on GitHub and the website is hosted on Netlify. Future updates would include the menus for the restaurants whenever i have the courage to do that 😂.
 
 ### Links
 
